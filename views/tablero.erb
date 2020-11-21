@@ -1,0 +1,121 @@
+<h1>JUGADOR: <%=@namePlayer%></h1>
+<table border="1"  WIDTH="500" HEIGHT="500" BGCOLOR="#000000">
+  <caption>Ejemplo de tabla</caption>
+  <form method="post" action="/getNombre">
+    <input type="text"  name="namePlayer">  
+    <input type="submit" value="Empezar!">
+</form>
+  <tbody>
+   <tr>
+      <th BGCOLOR="#FFFFFF"> </th>
+      <th BGCOLOR="#FFFFFF">A</th>
+      <th BGCOLOR="#FFFFFF">B</th>
+      <th BGCOLOR="#FFFFFF">C</th>
+      <th BGCOLOR="#FFFFFF">D</th>
+      <th BGCOLOR="#FFFFFF">E</th>
+      <th BGCOLOR="#FFFFFF">F</th>
+      <th BGCOLOR="#FFFFFF">G</th>
+      <th BGCOLOR="#FFFFFF">H</th>
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">1</th>
+      <th><%=@casillas[0]%></th>
+      <th>2</th>
+      <th>3</th>
+      <th></th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>*</th>
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">2</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>*</th>
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">3</th>
+      <th>1</th>
+      <th>2</th>
+      <th>2</th>
+      <th>4</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>*</th>
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">4</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>*</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>*</th>  
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">5</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th> </th>
+      <th>*</th>
+      <th> </th>
+      <th>*</th>
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">6</th>
+      <th>*</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th>*</th>
+    </tr>
+    <tr>
+      <th BGCOLOR="#FFFFFF">7</th>
+      <th>*</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th> </th>
+      <th>*</th>
+      <th> </th>
+      <th>*</th>
+  </tr>
+  <tr>
+    <th BGCOLOR="#FFFFFF">8</th>
+    <th>1</th>
+    <th>2</th>
+    <th>*</th>
+    <th>4</th>
+    <th> </th>
+    <th> </th>
+    <th> </th>
+    <th>*</th>
+  </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+<br>
+<form method="post" action="/ElegirCasillaS" >
+  <h4>X:</h4>  <input type="text" size="6" name="X:">  
+
+  <h4>Y:</h4>  <input type="text" size="6" name="Y:"> 
+  <br>
+  <br> 
+    <input type="submit" value="Aceptar!">
+</form>

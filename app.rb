@@ -1,6 +1,16 @@
 require 'sinatra'
-require './config'
-
+require './lib/buscamina'
+buscaminasTablero=Buscamina.new
 get '/' do
-    'hola mundo'
+    #@@namePlayer = params[:namePlayer].to_s
+    @casillas=buscaminasTablero.getTablero()
+    erb :home
+end  
+post '/getNombre' do
+
+     @namePlayer=params[:namePlayer]
+     
+     @casillas=buscaminasTablero.getTablero()
+         
+     erb :tablero
 end
